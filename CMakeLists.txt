@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.0.0)
 set( "OpenCV_DIR" "E:\\OpenCVDirs\\opencv3\\install" )
 project(image-2-ascii VERSION 0.1.0)
 
-FIND_PACKAGE( OpenCV REQUIRED )
-
 # Find OpenCV, you may need to set OpenCV_DIR variable
 # to the absolute path to the directory containing OpenCVConfig.cmake file
 # via the command line or GUI
