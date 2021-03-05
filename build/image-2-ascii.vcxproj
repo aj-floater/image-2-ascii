@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1983AD52-A43F-33F0-BFE0-B7A2DBFE0455}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>image-2-ascii</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\arjam\Documents\Gits\image-2-ascii\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">image-2-ascii.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">image-2-ascii</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\arjam\Documents\Gits\image-2-ascii\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">image-2-ascii.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">image-2-ascii</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\arjam\Documents\Gits\image-2-ascii\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">image-2-ascii.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">image-2-ascii</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\arjam\Documents\Gits\image-2-ascii\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">image-2-ascii.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">image-2-ascii</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_stitching3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_superres3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_videostab3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_aruco3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_bgsegm3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_bioinspired3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ccalib3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dnn_objdetect3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dpm3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_face3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_fuzzy3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_hfs3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_img_hash3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_line_descriptor3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_optflow3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_reg3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_rgbd3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_saliency3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_stereo3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_structured_light3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_surface_matching3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_tracking3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xfeatures2d3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ximgproc3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xobjdetect3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xphoto3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_shape3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_highgui3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_videoio3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_phase_unwrapping3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_video3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_datasets3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_plot3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_text3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dnn3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ml3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_imgcodecs3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_objdetect3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_calib3d3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_features2d3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_flann3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_photo3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_imgproc3413d.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_core3413d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/arjam/Documents/Gits/image-2-ascii/build/Debug/image-2-ascii.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/arjam/Documents/Gits/image-2-ascii/build/Debug/image-2-ascii.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_stitching3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_superres3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_videostab3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_aruco3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_bgsegm3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_bioinspired3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ccalib3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dnn_objdetect3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dpm3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_face3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_fuzzy3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_hfs3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_img_hash3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_line_descriptor3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_optflow3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_reg3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_rgbd3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_saliency3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_stereo3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_structured_light3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_surface_matching3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_tracking3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xfeatures2d3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ximgproc3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xobjdetect3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xphoto3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_shape3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_highgui3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_videoio3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_phase_unwrapping3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_video3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_datasets3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_plot3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_text3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dnn3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ml3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_imgcodecs3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_objdetect3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_calib3d3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_features2d3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_flann3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_photo3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_imgproc3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_core3413.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/arjam/Documents/Gits/image-2-ascii/build/Release/image-2-ascii.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/arjam/Documents/Gits/image-2-ascii/build/Release/image-2-ascii.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_stitching3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_superres3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_videostab3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_aruco3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_bgsegm3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_bioinspired3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ccalib3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dnn_objdetect3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dpm3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_face3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_fuzzy3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_hfs3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_img_hash3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_line_descriptor3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_optflow3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_reg3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_rgbd3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_saliency3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_stereo3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_structured_light3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_surface_matching3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_tracking3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xfeatures2d3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ximgproc3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xobjdetect3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xphoto3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_shape3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_highgui3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_videoio3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_phase_unwrapping3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_video3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_datasets3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_plot3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_text3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dnn3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ml3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_imgcodecs3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_objdetect3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_calib3d3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_features2d3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_flann3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_photo3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_imgproc3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_core3413.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/arjam/Documents/Gits/image-2-ascii/build/MinSizeRel/image-2-ascii.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/arjam/Documents/Gits/image-2-ascii/build/MinSizeRel/image-2-ascii.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\arjam\Documents\Gits\image-2-ascii\.\src;E:\OpenCVDirs\opencv3\install\include;E:\OpenCVDirs\opencv3\install\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_stitching3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_superres3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_videostab3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_aruco3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_bgsegm3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_bioinspired3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ccalib3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dnn_objdetect3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dpm3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_face3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_fuzzy3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_hfs3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_img_hash3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_line_descriptor3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_optflow3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_reg3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_rgbd3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_saliency3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_stereo3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_structured_light3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_surface_matching3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_tracking3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xfeatures2d3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ximgproc3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xobjdetect3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_xphoto3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_shape3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_highgui3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_videoio3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_phase_unwrapping3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_video3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_datasets3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_plot3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_text3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_dnn3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_ml3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_imgcodecs3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_objdetect3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_calib3d3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_features2d3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_flann3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_photo3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_imgproc3413.lib;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\opencv_core3413.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/arjam/Documents/Gits/image-2-ascii/build/RelWithDebInfo/image-2-ascii.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/arjam/Documents/Gits/image-2-ascii/build/RelWithDebInfo/image-2-ascii.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\arjam\Documents\Gits\image-2-ascii\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/arjam/Documents/Gits/image-2-ascii/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/arjam/Documents/Gits/image-2-ascii -BC:/Users/arjam/Documents/Gits/image-2-ascii/build --check-stamp-file C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeCCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeCXXCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeRCCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeSystem.cmake;E:\OpenCVDirs\opencv3\install\OpenCVConfig-version.cmake;E:\OpenCVDirs\opencv3\install\OpenCVConfig.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVConfig.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules-debug.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules-release.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/arjam/Documents/Gits/image-2-ascii/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/arjam/Documents/Gits/image-2-ascii -BC:/Users/arjam/Documents/Gits/image-2-ascii/build --check-stamp-file C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeCCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeCXXCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeRCCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeSystem.cmake;E:\OpenCVDirs\opencv3\install\OpenCVConfig-version.cmake;E:\OpenCVDirs\opencv3\install\OpenCVConfig.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVConfig.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules-debug.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules-release.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/arjam/Documents/Gits/image-2-ascii/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/arjam/Documents/Gits/image-2-ascii -BC:/Users/arjam/Documents/Gits/image-2-ascii/build --check-stamp-file C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeCCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeCXXCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeRCCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeSystem.cmake;E:\OpenCVDirs\opencv3\install\OpenCVConfig-version.cmake;E:\OpenCVDirs\opencv3\install\OpenCVConfig.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVConfig.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules-debug.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules-release.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/arjam/Documents/Gits/image-2-ascii/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/arjam/Documents/Gits/image-2-ascii -BC:/Users/arjam/Documents/Gits/image-2-ascii/build --check-stamp-file C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeCCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeCXXCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeRCCompiler.cmake;C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\3.18.5\CMakeSystem.cmake;E:\OpenCVDirs\opencv3\install\OpenCVConfig-version.cmake;E:\OpenCVDirs\opencv3\install\OpenCVConfig.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVConfig.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules-debug.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules-release.cmake;E:\OpenCVDirs\opencv3\install\x64\vc15\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\arjam\Documents\Gits\image-2-ascii\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\arjam\Documents\Gits\image-2-ascii\src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\arjam\Documents\Gits\image-2-ascii\build\ZERO_CHECK.vcxproj">
+      <Project>{ECBECE40-0818-3A32-A12C-BE844CC14F23}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,31 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/Platform/WindowsPaths.cmake
+C:/Users/arjam/Documents/Gits/image-2-ascii/CMakeLists.txt
+C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/3.18.5/CMakeCCompiler.cmake
+C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/3.18.5/CMakeCXXCompiler.cmake
+C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/3.18.5/CMakeRCCompiler.cmake
+C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/3.18.5/CMakeSystem.cmake
+E:/OpenCVDirs/opencv3/install/OpenCVConfig-version.cmake
+E:/OpenCVDirs/opencv3/install/OpenCVConfig.cmake
+E:/OpenCVDirs/opencv3/install/x64/vc15/lib/OpenCVConfig.cmake
+E:/OpenCVDirs/opencv3/install/x64/vc15/lib/OpenCVModules-debug.cmake
+E:/OpenCVDirs/opencv3/install/x64/vc15/lib/OpenCVModules-release.cmake
+E:/OpenCVDirs/opencv3/install/x64/vc15/lib/OpenCVModules.cmake
