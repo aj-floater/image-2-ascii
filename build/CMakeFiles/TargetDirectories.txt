@@ -1,0 +1,3 @@
+C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/image-2-ascii.dir
+C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/arjam/Documents/Gits/image-2-ascii/build/CMakeFiles/ZERO_CHECK.dir
