@@ -2,6 +2,8 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <fstream>
 #include <iostream>
+#include <vector>
+#include <string>
 
 using namespace cv;
 using namespace std;
@@ -13,12 +15,18 @@ Mat crop_image(Mat image){
     return image(crop_region);
 }
 
-void modify_image(Mat image){
+int convert_to_extreme(int data){
+    data = data / (14*8);
+    return (data > (265/2)) ? 1 : 0;
+}
+
+vector<int> retrieve_image_data(Mat image){
     Size size = image.size();
     int x = 0;
     int y = 0;
     int recordX = 0;
     int recordY = 0;
+    vector<int> data;
 
     int b = 0; int g = 0; int r = 0;
 
@@ -27,7 +35,6 @@ void modify_image(Mat image){
         for (int j = 0; j < 14; j++){
             for (int i = 0; i < 8; i++){            
                 Vec3b color = image.at<Vec3b>(Point(x,y));
-                //cout << "x: " + to_string(x) + " y: " + to_string(y) + "[" + to_string(color[2]) + ", " +to_string(color[1])+ ", " + to_string(color[0]) + "]" << endl;
 
                 b += color[0];
                 g += color[1];
@@ -39,6 +46,15 @@ void modify_image(Mat image){
             y++;
             if (y == recordY + 14) y -= 14;
         }
+
+        b = convert_to_extreme(b);
+        g = convert_to_extreme(g);
+        r = convert_to_extreme(r);
+
+        data.push_back(1*b + 2*g + 4*r);
+
+        // cout << (1*b + 2*g + 4*r) << endl;
+
         x += 8;
         recordX += 8;
         if (x == size.width){
@@ -48,10 +64,10 @@ void modify_image(Mat image){
             recordY += 14;
         }
 
-        cout << "x: " + to_string(x) + " y: " + to_string(y) << endl;
+        // cout << "x: " + to_string(x) + " y: " + to_string(y) << endl;
     }
-    
-    cout << to_string(size.width) + " x " + to_string(size.height) << endl;
+    return data;
+    // cout << to_string(size.width) + " x " + to_string(size.height) << endl;
 }
 
 int main( int argc, char** argv )
@@ -73,28 +89,22 @@ int main( int argc, char** argv )
 
     image = crop_image(image);
 
-    // Vec3b color = image.at<Vec3b>(Point(150,150));
+    vector<int> data = retrieve_image_data(image);
 
-    // int b, g, r;
-    // b = color[0];
-    // g = color[1];
-    // r = color[2];
-
-    // cout << "[" + std::to_string(r) + ", " + std::to_string(g)+ ", " + std::to_string(b) + "]" << endl;
-
-    modify_image(image);
-
-    
-
+    Size size = image.size();
+    ofstream outputFile;
+    std::vector<std::string> argList(argv, argv + argc);
+    outputFile.open(argList[1].erase(argList[1].size() - 4) + ".asc");
+    outputFile << to_string(size.width/8) + "x" + to_string(size.height/14) + "\n";
+    for (int d : data){
+        outputFile << d;
+    }
+    outputFile.close();
 
 
+    // namedWindow( "original image", WINDOW_AUTOSIZE );
+    // imshow( "original image", image );
 
-
-    namedWindow( "original image", WINDOW_AUTOSIZE );
-    imshow( "original image", image );
-    // namedWindow( "modified image", WINDOW_AUTOSIZE );
-    // imshow( "modified image", image_modified );
-
-    // waitKey(0);                                          // Wait for a keystroke in the window
+    waitKey(0);                                          // Wait for a keystroke in the window
     return 0;
 }
