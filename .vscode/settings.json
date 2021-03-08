@@ -38,7 +38,23 @@
         "xstddef": "cpp",
         "xstring": "cpp",
         "xtr1common": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "string": "cpp",
+        "sstream": "cpp",
+        "algorithm": "cpp",
+        "array": "cpp",
+        "cctype": "cpp",
+        "complex": "cpp",
+        "csetjmp": "cpp",
+        "fstream": "cpp",
+        "functional": "cpp",
+        "list": "cpp",
+        "map": "cpp",
+        "numeric": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "xhash": "cpp",
+        "xtree": "cpp"
     },
     "cmake.sourceDirectory": "${workspaceFolder}/."
 }
